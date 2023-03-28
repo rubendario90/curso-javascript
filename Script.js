@@ -2,7 +2,7 @@
 var nombre = "ruben";
 console.log(nombre);
 
-//tipos de datos en javascript
+//*tipos de datos en javascript*
 /* 
 En Javascript existen 7 tipos de datos
 *String Cadenas de texto.
@@ -16,3 +16,31 @@ valor tiene el valor undefined.
 *Object Un valor en memoria al que podemos acceder por un 
 identificador.
 */
+var nombre = "carlos"; //*string
+console.log(nombre);
+
+var edad = 25; //*number
+console.log(edad);
+
+
+var Adulto = true; //*boolean
+console.log(Adulto);
+Adulto = false;
+console.log(Adulto);
+
+//*odject
+var Objeto = {
+    nombre: "ruben",
+    edad: 25
+}
+console.log(Objeto);
+
+//*type off
+/* se utiliza para conocer el tipo de dato */
+
+var objeto = {
+    nombre: "ruben",
+    edad: 25
+}
+console.log(typeof nombre);
+console.log(typeof edad);
