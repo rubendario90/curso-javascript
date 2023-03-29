@@ -78,3 +78,31 @@ console.log (x);
 
 var y = null;
 console.log (y);
+
+//array
+var autos = [
+    'bwm', 'audi', 'volvo'
+];
+
+console.log(autos);
+console.log(typeof autos);
+
+//valores vacios
+var z = '';
+console.log (z);
+console.log(typeof z);
+
+//concatenacion de cadenas
+
+var cadena1 = 'hola';
+var cadena2 ='mundo';
+var cadena3 = 'javascript';
+var cadena = cadena1 +' ' + cadena2 +' ' + cadena3;
+console.log(cadena);
+
+//ejercicio 2 concatenaciones
+var nombre = 'juan';
+var apellido = 'perez';
+
+var nombreCompleto = nombre +' ' + apellido;
+console.log(nombreCompleto);
