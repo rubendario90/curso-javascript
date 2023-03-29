@@ -44,3 +44,37 @@ var objeto = {
 }
 console.log(typeof nombre);
 console.log(typeof edad);
+
+// booleano
+var bandera = true;
+console.log(bandera);
+
+//function
+
+function mifuncion () {
+    console.log(typeof mifuncion);
+}
+
+//typo symbol
+
+var symbol = Symbol("mi simbolo");
+console.log(typeof symbol);
+
+//function
+class persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+}
+console.log(persona);
+
+//tipo undefined
+
+var x;
+console.log (x);
+
+//null ausencia de valor 
+
+var y = null;
+console.log (y);
