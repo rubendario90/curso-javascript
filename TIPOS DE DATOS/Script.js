@@ -106,3 +106,33 @@ var apellido = 'perez';
 
 var nombreCompleto = nombre +' ' + apellido;
 console.log(nombreCompleto);
+
+
+//*let
+/* Declara una variable local con ámbito de bloque, 
+opcionalmente la inicia a un valor.*/
+
+/*en javascript se puede declarar variables sin necesidad de utilizar
+las palabras reservadas para declarar variables
+*/
+nombre = "juan";
+console.log(nombre);
+
+/* se puede primero declarar la variable y luego asignar un valor*/
+let nombre1;
+nombre1 = "pedro";
+console.log(nombre1);
+
+//*const
+/* Declara un nombre de constante de solo lectura y ámbito de 
+bloque.*/
+
+const apellido1 = "Bayona";
+console.log("Mi apellido es " + apellido1 + ".");
+
+/* declarar dos variables en una misma linea*/
+let variable1, variable2;
+variable1 = 10;
+variable2 = 20;
+variable3 = variable1 + variable2;
+console.log(variable3);
