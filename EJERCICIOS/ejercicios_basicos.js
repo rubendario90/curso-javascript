@@ -61,5 +61,77 @@ if (money > price) {
   console.log("That's not enough, you still owe me money.");
 }
 
+//ejemplo
+let number = 10;
+
+if (number % 2 !== 0) {
+  console.log("odd");
+} else {
+  console.log("even");
+}
+
+/* el operador !== se utiliza para realizar
+ una comparación estricta de desigualdad. 
+ Compara dos valores y devuelve true 
+ si los valores son diferentes en términos 
+ de valor y tipo de datos. En otras 
+ palabras, el operador !== devuelve true 
+ si los operandos no son iguales en 
+ valor o si no son del mismo tipo de datos.*/
 
 
+ //
+
+
+ let musicos = 0;
+
+ if (musicos <= 0) {
+  console.log("not a group");
+ }
+ else if (musicos === 1){
+  connsole.log(solo);
+ }
+ else if (musicos === 2){
+  console.log ("duet");
+ }
+ else if (musicos === 3){
+  console.log ("trio");
+ }
+ else if (musicos === 4) {
+  console.log ("quartet");
+ }
+else if(musicos >= 5) {
+  console.log ("this is a large group");
+} 
+
+if (musicos === 0) {
+console.log ("no group music");
+}
+
+
+let room = "dining room";
+let weapon;
+let suspect;
+let solved = false;
+
+if (room === "dining room") {
+  weapon = "knife";
+  suspect = "Mr. Parkes";
+  solved = true;
+} else if (room === "gallery") {
+  weapon = "trophy";
+  suspect = "Ms. Van Cleve";
+  solved = true;
+} else if (room === "billiards room") {
+  weapon = "pool stick";
+  suspect = "Mrs. Sparre";
+  solved = true;
+} else if (room === "ballroom") {
+  weapon = "poison";
+  suspect = "Mr. Kalehoff";
+  solved = true;
+}
+
+if (solved) {
+  console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+}

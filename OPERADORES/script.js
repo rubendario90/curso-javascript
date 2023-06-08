@@ -64,3 +64,81 @@ let c1 = a1 += b1;
 postincremento = c1 = c1++;
 console.log (postincremento)
 
+//  Expresiones logicas
+var colt = "not busy";
+var weather = "nice";
+
+if (colt === "not busy" && weather === "nice") {
+  console.log("go to the park");
+}
+/*
+Fíjate &&en el código de arriba.
+El &&símbolo es el operador lógico AND y se usa para combinar dos expresiones lógicas en una expresión lógica más grande. Si las dos expresiones más pequeñas son verdaderas , la expresión completa se evalúa como verdadera . Si cualquiera de las expresiones más pequeñas es falsa , entonces toda la expresión lógica es falsa .
+Otra forma de pensarlo es cuando el &&operador se coloca entre las dos declaraciones, el código dice literalmente, "si Colt no está ocupado Y hace buen tiempo, entonces ve al parque".
+*/
+
+/* 
+Operador	    Significado	       Ejemplo	Cómo funciona
+&&	Y lógico	value1 && value2	Devuelve true si ambos value1 y value2 evalúan a true.
+||	O lógico	value1 || value2	Devuelve true si o value1 bien value2 (¡ o incluso ambos! ) se evalúa como true.
+! NO lógico	!value1	Devuelve lo contrario de value1. Si value1 es true, entonces !value1es false.
+*/
+
+
+/* 
+tabla de verdad del operador or 
+P	Q	P or Q
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+*/
+
+
+/* 
+tabla de verdad del operador and
+P	Q	P and Q
+0	0	0
+0	1	0
+1	0	0
+1	1	1
+*/
+
+//EJEMPLOD E CODIGO EN JAVASCRIPT 
+var balance = 325.00;
+var checkBalance = true;
+var isActive = false;
+
+if (checkBalance) {
+if (isActive && balance > 0) {
+console.log("Your balance is $" + balance.toFixed(2) + ".");
+} 
+else if (!isActive) {
+console.log("Your account is no longer active.");
+} 
+else if (balance === 0) {
+console.log("Your account is empty.");
+} else {
+console.log("Your balance is negative. Please contact bank.");
+}
+} else {
+console.log("Checking balance is not available.");
+}
+
+//ejemplo de codigo
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Ingresa el sabor de tu helado: ', (sabor) => {
+  rl.question('Ingresa el tipo de recipiente: ', (recipiente) => {
+    rl.question('Ingresa las coberturas: ', (coberturas) => {
+      console.log(`Tu helado es de ${sabor}, tu recipiente es de ${recipiente}, y tus coberturas son ${coberturas}`);
+      rl.close();
+    });
+  });
+});
+
