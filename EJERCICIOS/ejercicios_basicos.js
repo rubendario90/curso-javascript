@@ -132,6 +132,75 @@ if (room === "dining room") {
   solved = true;
 }
 
-if (solved) {
-  console.log(suspect + " did it in the " + room + " with the " + weapon + "!");
+
+//ejemplo de codigo con la declaracion switch
+
+
+var place = 'first';
+
+switch (place) {
+  case "first":
+    console.log('gold');
+    break;
+  case "second":
+    console.log('silver');
+    break;
+  case "third":
+    console.log('bronze');
+    break;
+  default:
+    console.log('no medal');
+}
+
+/* 
+si hay muchos resultados posibles, la mejor práctica es usar una 
+declaración de cambio porque es más fácil y menos detallada. Al ser
+más fácil de leer, es más fácil seguir la lógica y, por lo tanto, 
+reducir la carga cognitiva de leer múltiples condiciones.
+Sin embargo, esta no es una regla escrita en piedra. 
+Es simplemente una elección estilística.
+*/
+
+var edad = 10;
+if (edad >= 65) {
+  console.log("obtienes tus ingresos de tu pension");
+} 
+else if (edad <= 65 && edad >= 18) {
+  console.log("obtienes un salrio cada mes");}
+else if (edad < 18) {
+    console.log("obtienes una asignacion");
+}
+else {
+  console.log("el valor de la variable no es numerico");
+}
+
+//ejemplo de codigo con switch
+let day = "Sunday";
+
+var day = `Sunday`;
+switch(day) {
+   case 'Monday':
+       console.log('Read a book');
+       break;
+   case 'Tuesday':
+       console.log('Watch a movie');
+       break;
+   case 'Wednesday':
+       console.log('Read a book');
+       break;
+   case 'Thursday':
+       console.log('Play basketball');
+       break;
+   case 'Friday':
+       console.log('Socialize');
+       break;
+   case 'Saturday':
+       console.log('Chill');
+       break;
+   case 'Sunday':
+       console.log('Have barbecue');
+       break;
+   default:
+       //this block will run if no condition matches
+       console.log('There is no such day');
 }

@@ -136,3 +136,145 @@ variable1 = 10;
 variable2 = 20;
 variable3 = variable1 + variable2;
 console.log(variable3);
+
+/*
+Operadores adicionales
+Operador lógico Y:  && 
+
+Operador OR lógico:  || 
+
+Operador lógico NOT:  ! 
+
+El operador de módulo:  % 
+
+El operador de igualdad: ==
+
+El operador de igualdad estricta: ===
+
+El operador de desigualdad: !=
+
+El operador de desigualdad estricta: !==
+
+El operador de asignación de suma:  += 
+
+El operador de asignación de concatenación:  +=  
+es el mismo que el anterior, más sobre eso más adelante)*/
+
+var currentTime = 10;
+console.log(currentTime > 9 && currentTime < 17);
+
+/*
+El operador de igualdad,  ==
+El operador de igualdad comprueba si dos valores son iguales.
+
+Por ejemplo, esta comparación devuelve verdadero : 5 == 5 . De hecho, es cierto que 5 es igual a 5.
+
+Aquí hay un ejemplo del operador de igualdad que devuelve falso :   5 == 6 . De hecho, es cierto que 5 no es igual a 6.
+
+Además, incluso si uno de los valores comparados es del tipo de número y el otro es del tipo de cadena, el valor devuelto sigue siendo verdadero : 5 == "5" .
+
+Esto significa que el operador de igualdad compara solo los valores, pero no los tipos.
+
+El operador de igualdad estricta,  ===
+El operador de igualdad estricta compara tanto los valores como los tipos de datos.
+
+Con el operador de igualdad estricta, comparar 5 === 5 aún devuelve true . Los valores a cada lado del operador de igualdad estricta tienen el mismo valor y el mismo tipo. Sin embargo, comparar 5 == "5" ahora devuelve false , porque los valores son iguales, pero el tipo de datos es diferente.
+
+El operador de desigualdad,  !=
+El operador de desigualdad comprueba si dos valores no son iguales, pero no comprueba la diferencia de tipos.
+
+Por ejemplo, 5 != "5" devuelve falso, porque es falso afirmar que el número 5 no es igual al número 5, aunque este otro número sea del tipo de datos de cadena.
+
+El operador de desigualdad estricta  !==
+Para que el operador de desigualdad estricta devuelva false , los valores comparados deben tener el mismo valor y el mismo tipo de datos.
+
+Por ejemplo,   5 !== 5 devuelve falso porque es falso decir que el número 5 no es del mismo valor y tipo de datos y otro número 5.
+
+Sin embargo, comparar el número 5 y la cadena 5, utilizando el operador de desigualdad estricta, devuelve verdadero .*/
+
+
+let timeremaining = 0;
+let energia = 10;
+let gameover = timeremaining == 0 || energia == 0;
+console.log ("game over: "  + gameover );
+
+let num1 = 2;
+let num2 = 5;
+let testing1 = num1 % 2;
+let testing2 = num2 % 2;
+let result1 = testing1 == 0;
+let result2 = testing2 == 0;
+
+console.log ("Is", num1, "an even number?", result1);
+console.log ("Is", num2, "an even number?", result2);
+
+let contador = 0;
+    contador += 5;
+    contador += 3;
+
+console.log (contador);
+
+//*Indexación
+/* Para acceder a un carácter individual, 
+puede usar la ubicación del carácter en la cadena, llamada su índice . 
+Simplemente coloque el índice del carácter entre corchetes (comenzando con [0]el primer carácter) 
+inmediatamente después de la cadena. Por ejemplo:*/
+var nombre = "James";
+console.log (nombre[0]);
+
+var nombre = "James";
+console.log (nombre[2]);
+
+
+//*cadenas de escape
+/* 
+Hay algunos casos en los que es posible que desee crear una cadena que 
+contenga más que solo números y letras. Por ejemplo, ¿qué sucede si desea 
+usar comillas en una cadena?
+
+"The man whispered, "please speak to me.""
+SyntaxError no capturado: identificador inesperado
+
+Si intenta usar comillas dentro de una cadena, recibirá una 
+SyntaxErrorcomo la de arriba.
+
+Debido a que necesita usar comillas para indicar el principio y el final 
+de las cadenas, el motor de JavaScript malinterpreta el significado de su 
+cadena al pensar que "The man whispered, "es la cadena. Luego, ve el resto 
+please speak to me.""y devuelve un SyntaxError.
+
+Si desea usar comillas dentro de una cadena y hacer que JavaScript no 
+malinterprete sus intenciones, necesitará una forma diferente de escribir 
+comillas. Afortunadamente, JavaScript tiene una manera de hacer esto 
+usando el carácter de barra invertida ( \).
+*/ 
+
+/* 
+Código	     Personaje
+\\	\        (barra invertida)
+"	''       (comillas dobles)
+'	'        (una frase)
+\norte	      nueva línea
+\t	          pestaña
+*/
+
+//ejercicio
+console.log ("The man whispered, \"please speak to me.\"")
+
+//ejercicio
+var my_string = "Udacity";
+
+// Iterate using a Loop
+for (var i = 0; i < my_string.length; i++) {
+  console.log(my_string.charCodeAt(i));
+}
+
+//ejercicio 2
+var my_string = "a";
+var ASCII_value = my_string.charCodeAt(0);
+console.log(ASCII_value);
+
+
+//ejercicio 3
+var haiku = " Blowing from the west"+"\n Fallen leaves gather"+"\n In the east."
+console.log(haiku);
