@@ -84,3 +84,33 @@ while (i > 0) {
     i = i - 1;
 };
 console.log('Counting completed!');
+
+//ejemplo
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+  console.log(firstNum);}
+
+  for (var secondNum = 0; secondNum < 10; secondNum++) {
+    console.log(secondNum);
+}
+
+//nested loops - one inside another
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+  for (var secondNum = 0; secondNum < 10; secondNum++) {
+      console.log(firstNum + ", " + secondNum);
+  }
+}
+
+for (var firstNum = 0; firstNum < 2; firstNum++) {
+  for (var secondNum = 0; secondNum < 10; secondNum++) {
+      console.log(firstNum + " times " + secondNum + " equals " + firstNum * secondNum);
+  }
+}
+
+
+//
+var cubes = 'ABCDEFG';
+//styling console output using CSS with a %c format specifier
+for (var i = 0; i < cubes.length; i++) {
+    var styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+    console.log("%c" + cubes[i], styles)
+}
